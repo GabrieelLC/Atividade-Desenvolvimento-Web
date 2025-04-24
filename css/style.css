@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+    color: #333;
+    height: 100%;
+  }
+  
+  .login-container, .todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: 500px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    text-align: center;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#listaTarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Espaçamento entre os elementos */
+    padding: 5px 0;
+}
+
+#listaTarefas li input[type="checkbox"] {
+    margin: 0;
+}
+
+#listaTarefas li span {
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+    text-align: left;
+}
+
+#listaTarefas li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#listaTarefas li button:hover {
+    background-color: #cc0000;
+}
